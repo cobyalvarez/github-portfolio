@@ -1,48 +1,59 @@
 /* styles.css */
 
+.main{
+    padding-bottom: 20px 0;
+}
+
 /*Controls the body and the style of the writing overall*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    padding-bottom: 60px;
     
+}
+
+.container{
+    max-width: 600px; /* Adjust the maximum width as needed */
+    margin-right: auto;
+    margin-left: auto;
 }
 /*Controls the layout of the website specifically the bottom where the footer is*/
 footer {
-    margin-top: 50px;
-    background-color: #f4f4f4;
-    padding: 20px 0;
-    text-align: center;
-    color: #666;
     position: fixed;
-    left: 0;
     bottom: 0;
     width: 100%;
+    background-color: #f5f5f5;
+    padding-top: 5px 0;
+    text-align: center;
 }
 /*Section controlling contact section*/
-.contact-section{
-    margin: 2em;
+.content {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-}
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    font-size: 20px;
 
-.boxes{
-    margin:1em;
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+  }
+  
+  .contact-section {
+    width: 45%; /* Adjust width as needed */
+  }
+  
+  .accounts {
+    width: 45%; /* Adjust width as needed */
+  }
+
+  .cards{
+    margin-bottom: 2rem;
+  }
   
 .dark-mode {
     background-color: black;
     color: white;
 }
 
-.dark-button {
+.top{
     position: absolute;
     top: 10px;
     right: 10px;

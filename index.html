@@ -20,9 +20,9 @@
 
   <body>
     <!---Navigation menu bar ---->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><h4>Coby Alvarez</h4></a>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href=""><h4>Coby Alvarez</h4></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -50,17 +50,17 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
-            <a class="top btn btn-dark" href="icons/Resume.pdf" role="button" target="_blank">Resume</a><br>
-
           </ul>
         </div>
       </nav>
     </header>
 
     <!-- Main Content -->
-      <div class="container mt-5">
-        <h2><strong>Hi, I'm Coby Alvarez</strong></h2>
-        <h5>Software Engineer</h5>
+      <!-- <div class="container mt-5"> -->
+        <section class="introduction">
+          <div class="container" style="width:60%;">
+        <br><br><h2><strong>Hi, I'm Coby Alvarez</strong></h2>
+        <h5>Software Engineer</h5><br>
 
         <!-- Skills Section -->
         <p>
@@ -71,15 +71,23 @@
           <strong>Frameworks/Tools:</strong> NodeJS, Exlipse, VSCode, Bootstrap,
           MongoDB, MySQL Workbench, Django, AWS, Pycharm, Excel, Tableau
         </p>
+
+        <p><em>Fluent in English and Spanish</em></p>
+        <a class="btn btn-dark custom-btn" href="icons/Resume.pdf" role="button" target="_blank">Resume</a>
+        <br>
+          </div>
+
+      </section>
         
         <!-- Image and Resume Button -->
-        <div class="image">
-          <a class="btn btn-primary" href="icons/Resume.pdf" role="button" target="_blank">Resume</a><br>
-        </div>
         
         <!-- About Me Section -->
-        <p>
-          I am a recent graduate in May 2024 at California State University Los
+        <div class="container mt-5">
+
+        <h3 class="title">About Me</h3>
+
+        <p class="aboutme">
+          I am a recent graduate at California State University Los
           Angeles. Throughout my academic journey, I have cultivated a deep
           appreciation for the creativity and problem-solving inherent in
           computer science, finding joy in its ever-evolving nature. I love the
@@ -87,10 +95,13 @@
           the future. My goal is to continually learn and adapt, driving
           positive change and shaping a brighter future through technology.
         </p>
+        </div>
         
         <!-- Experience Section -->
+        <div class="container mt-5" style="width: 65%">
+
         <section id="experience">
-        <h4>Experience</h4>
+        <h3 class="title">Experience</h3>
         <div class="card mb-3" style="max-width: 540px">
           <div class="row g-0">
             <div class="col-md-4">
@@ -115,7 +126,7 @@
           </div>
         </div>
 
-        <h4>Education</h4>
+        <h3 class="title">Education</h3>
         
         <div class="card mb-3" style="max-width: 540px">
           <div class="row g-0">
@@ -130,7 +141,7 @@
               <div class="card-body">
                 <h5 class="card-title">Bachelors in Computer Science</h5>
                 <p class="card-text">
-                  California State University Los Angeles<br />Graduate in
+                  California State University Los Angeles<br />Graduated in
                   2024<br />GPA 3.4<br />
                 </p>
                 <p class="card-text">
@@ -143,13 +154,17 @@
           </div>
         </div>
         </section>
-        <!---->
+        </div>
 
         
       <!---This here is the card for the list of projects -->
       <section class="project-section" id="projects">
-        <h2 style="text-align: center;">Projects</h2>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="container mt-5">
+
+        <h2 class="title">Projects</h2>
+        <div class="grid">
+
+          <div class="row">
           <div class="col">
             <div class="card">
               <img src="..." class="card-img-top" alt="..." />
@@ -159,14 +174,10 @@
                   C# and Unity
                 </h6>
                 <p class="card-text">
-                  In this project, I worked with a group to create a 3D
-                  adventure platform game utilizing AI and Unity.
+                  Collaborated and led a group to create an
+                  adventure platform game utilizing AI and 3D Unity. Game has different levels each level a different minigame. 
                 </p>
-                <a
-                  href="https://github.com/cobyalvarez/Team-21-3D-Game"
-                  class="card-link"
-                  >Repository</a
-                >
+                <a href="https://github.com/cobyalvarez/Team-21-3D-Game" class="card-link">Repository</a>
               </div>
             </div>
           </div>
@@ -177,9 +188,9 @@
                 <h5 class="card-title">GUI Spongebob Game</h5>
                 <h6 class="card-subtitle mb-2 text-body-secondary">Python</h6>
                 <p class="card-text">
-                  I developed a program where through choices
+                  I developed a text GUI game utilizing Python based on Spongebob where based off the users choices they will get different results
                 </p>
-                <a href="#" class="card-link">Repository</a>
+                <a href="https://github.com/cobyalvarez/GUI_Spongebob_Game" class="card-link">Repository</a>
               </div>
             </div>
           </div>
@@ -187,13 +198,31 @@
             <div class="card">
               <img src="..." class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">Choice horror game</h5>
+                <h5 class="card-title">Choice games</h5>
                 <h6 class="card-subtitle mb-2 text-body-secondary">Java</h6>
                 <p class="card-text">
-                  I developed a game where through choices you get several
-                  different results i
+                  - Portal games is a choice based game in the terminal with different results<br>
+                  - Adventure game is a horror game that utilizes probability to reach different results 
                 </p>
-                <a href="#" class="card-link">Repository</a>
+                <a href="https://github.com/cobyalvarez/PortalGames" class="card-link">Repository</a>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Choice horror game</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Java</h6>
+                  <p class="card-text">
+                    I developed a game where through choices you get several
+                    different results i
+                  </p>
+                  <a href="#" class="card-link">Repository</a>
+                </div>
               </div>
             </div>
             <div class="col">
@@ -210,15 +239,33 @@
                 </div>
               </div>
             </div>
+
+            <div class="col">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Choice horror game</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Java</h6>
+                  <p class="card-text">
+                    I developed a game where through choices you get several
+                    different results i
+                  </p>
+                  <a href="#" class="card-link">Repository</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+            
           </div>
         </div>
-
-
 
       </section>
 
       <!--Contact Section-->
       <section id="contact">
+      <div class="container mt-5">
+
       <div class="content">
         <div class="contact-section">
           <h1>Contact Me</h1>
@@ -249,8 +296,8 @@
           </a>
         </div>
         </div>
-      </section>
       </div>
+      </section>
     
     <!-- Footer -->
 

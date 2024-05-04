@@ -7,7 +7,8 @@
 }
 
 .about{
-  background-color: rgb(223, 220, 216);
+  background-color: rgb(33, 37, 41);
+  color: white;
 }
 
 .btn.custom-btn {
@@ -75,8 +76,11 @@ footer {
     width: 45%; /* Adjust width as needed */
   }
 
-  
-
+  .profilepic{
+    float: right;
+    margin-top: -45%;
+    border: 2px solid black;
+  }
 
 .dark-mode {
     background-color: black;
@@ -87,4 +91,8 @@ footer {
     position: absolute;
     top: 10px;
     right: 10px;
+}
+#projects{
+  background-color: rgb(33, 37, 41);
+  color: white;
 }

@@ -6,13 +6,32 @@
   padding: 0;
 }
 
+.title{
+  text-align: center;
+}
+
+.introduction{
+  padding-top: 80px;
+}
+
+.profilepic{
+  float: right;
+  margin-top: -45%;
+  border: 2px solid black;
+}
+
 .about{
   background-color: rgb(33, 37, 41);
   color: white;
 }
 
+.aboutme{
+  margin-left: 15%;
+  margin-right: 20%;
+  font-size: large;
+}
 .btn.custom-btn {
- background-color: #0056b3; /* Darker blue color on hover */
+  background-color: #0056b3; /* Darker blue color on hover */
   border-color: #0056b3; /* Darker border color on hover */
 }
 
@@ -24,12 +43,25 @@
 
 /*Controls the body and the style of the writing overall*/
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    margin-top: 0;
-    padding: 0;
-    padding-bottom: 70px;    
+  font-family: Arial, sans-serif;
+  margin: 0;
+  margin-top: 0;
+  padding: 0;
+  padding-bottom: 0px;    
 }
+
+#projects{
+  background-color: rgb(33, 37, 41);
+  color: white;
+  padding-top:5px; /* Add more space at the top */
+  padding-bottom: 35px;/* Add more space at the bottom*/
+}
+
+#experience{
+  padding-top:5px; /* Add more space at the top */
+  padding-bottom: 35px
+}
+
 .container.mt-5{
   margin-top: 0em;
 }
@@ -39,60 +71,51 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
-.aboutme{
-  margin-left: 15%;
-  margin-right: 20%;
-  font-size: large;
-}
-
-.title{
-  text-align: center;
-}
 
 /*Controls the layout of the website specifically the bottom where the footer is*/
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #000000;
-    text-align: center;
-    color: aliceblue;
-}
+
 .card{
   margin-bottom: 1rem;
 }
+
 /*Section controlling contact section*/
 .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Align items to the top */
-    font-size: 20px;
-  }
-  .contact-section {
-    width: 45%; /* Adjust width as needed */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+  font-size: 20px;
+}
+.contact-section {
+  width: 45%; /* Adjust width as needed */
   }
   
-  .accounts {
-    width: 45%; /* Adjust width as needed */
-  }
-
-  .profilepic{
-    float: right;
-    margin-top: -45%;
-    border: 2px solid black;
-  }
+.accounts {
+  width: 45%; /* Adjust width as needed */
+}
 
 .dark-mode {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
+
 /*The top is used to make the button on the top right in the future if I want to apply dark mode option */
 .top{
-    position: absolute;
-    top: 10px;
-    right: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
-#projects{
-  background-color: rgb(33, 37, 41);
-  color: white;
+
+
+#contact{
+  padding-top: 30px; /* Add padding to the top */
+  padding-bottom: 60px; /* Add padding to the bottom */
+}
+
+
+footer {
+    height: 40px; /* Set the height as needed */
+    width: 100%;
+    background-color: #343a40;
+    text-align: center;
+    color: aliceblue;
 }
